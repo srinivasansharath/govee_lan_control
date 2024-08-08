@@ -56,6 +56,9 @@ led.off()
 
 ## Build and Publish
 
+Clean up previous build
+```$ python setup.py clean --all```
+
 Build the package
 ``` $ python3 setup.py sdist bdist_wheel```
 
