@@ -2,13 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name="govee_lan_control",
-    version="1.0.2",
+    version="1.0.3",
     packages=find_packages(),
     include_package_data=True,
     description="A Python package to control Govee LED devices over the local network using multicast UDP packets.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/my_package",
+    url="https://github.com/srinivasansharath/govee_lan_control",
     author="Sharath Srinivasan",
     author_email="srinivasansharath@gmail.com",
     license="MIT",
