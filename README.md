@@ -12,10 +12,10 @@ This package has been developed and tested with only one Govee Device on the net
 ```
 import time
 import random
-import govee_lan_device
+from govee_lan_control import GoveeLanDevice
 
 # Init the device
-led = govee_lan_device.GoveLanDevice()
+led = GoveeLanDevice()
 
 # if device is not found, exit
 if led.isInitialized == False:

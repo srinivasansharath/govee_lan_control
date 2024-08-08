@@ -1,5 +1,5 @@
-import udp
 import json
+from govee_lan_control import udp
 
 # Govee Multicast Network Parameters
 MCAST_GRP = '239.255.255.250'

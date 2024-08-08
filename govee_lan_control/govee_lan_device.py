@@ -1,7 +1,7 @@
-import udp
 import json
 import time
-from discover import discover_govee_leds
+from govee_lan_control import udp
+from govee_lan_control import discover
 
 # Govee Multicast Network Parameters
 MCAST_GRP = '239.255.255.250'
@@ -10,9 +10,9 @@ MCAST_RECV_PORT = 4002
 DEVICE_CONTROL_PORT = 4003
 
 
-class GoveLanDevice:
+class GoveeLanDevice:
     def __init__(self):
-        ip, mac, name = discover_govee_leds()
+        ip, mac, name = discover.discover_govee_leds()
         if ip == None:
             self.isInitialized = False
         else:
