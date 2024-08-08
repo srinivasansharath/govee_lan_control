@@ -52,3 +52,12 @@ led.blink(2)
 # Turn off the LED
 led.off()
 ```
+
+
+## Build and Publish
+
+Build the package
+``` $ python3 setup.py sdist bdist_wheel```
+
+Publish the package to pypi.org
+``` $ twine upload dist/* ```

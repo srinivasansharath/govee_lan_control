@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="govee_lan_control",
-    version="1.0.0",
+    version="1.0.2",
     packages=find_packages(),
     include_package_data=True,
     description="A Python package to control Govee LED devices over the local network using multicast UDP packets.",
